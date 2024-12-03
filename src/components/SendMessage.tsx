@@ -121,7 +121,7 @@ const SendMessage = () => {
             className="bg-red-500/10 text-red-500 p-2 px-4
            rounded text-[14px]"
           >
-            {error + "jjjjjjj"}
+            {error}
           </div>
         )}
         {success && (
