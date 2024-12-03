@@ -25,18 +25,30 @@ export default function Home() {
         {/*//TODO */}
         <FloatingNav
           navItems={[
-            { name: "Home", link: "#home", icon: <BiHome /> },
-            { name: "About", link: "#about", icon: <BsPerson /> },
-            { name: "Tools", link: "#tools", icon: <BsTools /> },
+            {
+              name: "Home",
+              link: "#home",
+              icon: <BiHome className="text-[22px]" />,
+            },
+            {
+              name: "About",
+              link: "#about",
+              icon: <BsPerson className="text-[22px]" />,
+            },
+            {
+              name: "Tools",
+              link: "#tools",
+              icon: <BsTools className="text-[16px]" />,
+            },
             {
               name: "Projects",
               link: "#projects",
-              icon: <AiFillFolder className="text-[20px]" />,
+              icon: <AiFillFolder className="text-[22px]" />,
             },
             {
               name: "Message",
               link: "#message",
-              icon: <CgMail className="text-[20px]" />,
+              icon: <CgMail className="text-[22px]" />,
             },
           ]}
         />

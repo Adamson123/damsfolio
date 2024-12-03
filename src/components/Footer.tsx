@@ -8,18 +8,20 @@ const Footer = () => {
     <footer
       className="flex items-center justify-center
       md:justify-between bg-slate-50/15
-      min-w-full flex-col md:flex-row p-4 text-[15px]"
+      min-w-full flex-col md:flex-row p-4"
     >
-      <div className="space-y-1">
-        <p className="text-muted-foreground text-[14px]">
+      <div className="flex flex-col items-center gap-2">
+        <p className="text-muted-foreground text-[13px]">
           Thanks for visiting my site!
         </p>
-        <p className="uppercase tracking-wider">&copy; 2024 Ajibade Adam</p>
+        <p className="uppercase tracking-wider text-[14px]">
+          &copy; 2024 Ajibade Adam
+        </p>
       </div>
 
       <div className="flex flex-col items-center md:flex-row md:gap-1">
-        <p className="text-[14px]">Connect with me:</p>
-        <div className="flex items-center gap-2">
+        <p className="text-[13px]">Connect with me:</p>
+        <div className="flex items-center gap-3 text-[20px]">
           <a href="https://github.com/Adamson123">
             <GrGithub className="inline -translate-y-[1px]" />
           </a>
