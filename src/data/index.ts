@@ -51,7 +51,7 @@ export const projects = [
     ],
     livePreview: "https://do-manager.vercel.app/",
     viewCode: "https://github.com/Adamson123/Do-Manager",
-    scrollerColor: "black",
+    scrollerColor: "",
   },
   {
     title: "XPAD",

@@ -23,13 +23,13 @@ const Footer = () => {
           <a href="https://github.com/Adamson123">
             <GrGithub className="inline -translate-y-[1px]" />
           </a>
-          <a href="/">
+          <a href="https://wa.me/23407070677277">
             <BsWhatsapp />
           </a>
-          <a href="/">
+          <a href="https://join.skype.com/invite/AAa2nAIvdXpL">
             <FaSkype />
           </a>
-          <a href="">
+          <a href="mailto:dapoajibade66@gmail.com">
             <SiGmail />
           </a>
         </div>

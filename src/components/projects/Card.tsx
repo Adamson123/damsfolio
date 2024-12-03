@@ -81,27 +81,6 @@ const Card = ({
             />
           ))}
         </div>
-        {/* Scroll */}
-        <div
-          className="absolute flex bottom-2 left-[50%]
-         -translate-x-[50%] gap-1 z-10"
-        >
-          {images.map((path, index) => (
-            <Link href={`#${path}`} key={path}>
-              {imageOnView === index ? (
-                <FaCircle
-                  fill={scrollerColor ? scrollerColor : "rgb(248 250 252)"}
-                  className="w-3 h-3"
-                />
-              ) : (
-                <BiCircle
-                  fill={scrollerColor ? scrollerColor : "rgb(248 250 252)"}
-                  className="w-3 h-3"
-                />
-              )}
-            </Link>
-          ))}
-        </div>
       </div>
 
       {/* Info */}
@@ -110,6 +89,28 @@ const Card = ({
         bg-gradient-to-b to-slate-50/5 w-full rounded-b-lg
         flex flex-col gap-2 relative"
       >
+        {/* Scroll */}
+        <div
+          className="absolute flex top-2 left-[50%]
+         -translate-x-[50%] gap-1 z-10"
+        >
+          {images.map((path, index) => (
+            <Link href={`#${path}`} key={path}>
+              {imageOnView === index ? (
+                <FaCircle
+                  fill={scrollerColor ? scrollerColor : "rgb(248 250 252/0.7)"}
+                  className="w-3 h-3"
+                />
+              ) : (
+                <BiCircle
+                  fill={scrollerColor ? scrollerColor : "rgb(248 250 252/0.7)"}
+                  className="w-3 h-3"
+                />
+              )}
+            </Link>
+          ))}
+        </div>
+
         {/* Title */}
         <h4 className="font-medium text-2xl">{title}</h4>
         {/* Description */}
