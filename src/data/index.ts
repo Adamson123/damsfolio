@@ -61,7 +61,7 @@ export const projects = [
         images: [
             "/block-craft-features/fourth.png",
             "/block-craft-features/third.png",
-            // "/block-craft-features/first.png",
+            "/block-craft-features/seventh.png",
         ],
         techStack: ["html.png", "css.png", "typescript.png"],
         livePreview: "https://block-craft.vercel.app/",

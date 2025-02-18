@@ -72,7 +72,7 @@ const Card = ({
                             key={path}
                             src={path ? path : "/spi 2.jpg"}
                             className="rounded-t-lg snap-start object-cover
-              min-w-full"
+                             min-w-full"
                             // height={100}
                             // width={100}
                             // unoptimized
@@ -87,7 +87,7 @@ const Card = ({
             <div
                 className="p-4 pb-3 flex-grow from-slate-50/15
         bg-gradient-to-b to-slate-50/5 w-full rounded-b-lg
-        flex flex-col gap-2 relative"
+        flex flex-col gap-2 relative z-10"
             >
                 {/* Scroll */}
                 <div
