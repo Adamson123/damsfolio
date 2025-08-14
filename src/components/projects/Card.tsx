@@ -13,6 +13,7 @@ interface ProjectTypes {
     livePreview: string;
     viewCode: string;
     scrollerColor?: string;
+    underDevelopment: boolean;
 }
 
 const Card = ({
@@ -24,6 +25,7 @@ const Card = ({
         livePreview,
         viewCode,
         scrollerColor,
+        underDevelopment,
     },
 }: {
     project: ProjectTypes;
@@ -34,11 +36,17 @@ const Card = ({
 
     return (
         <div
-            className="w-full max-h-[500px] max-w-[400px] min-h-[500px] z-20 rounded-lg
-      flex flex-col bg-transparent shadow-lg"
+            className="max-h-[630px] w-[450px] min-h-[630px] z-20 rounded-lg
+     bg-transparent shadow-lg grid grid-rows-[45%_55%] relative overflow-hidden"
         >
+            {/* inset_0_2px_4px_rgba(0,0,0,0.3),inset_0_-2px_4px_rgba(0,0,0,0.3), */}
+            {underDevelopment && (
+                <div className="absolute bg-green-500  z-10 p-1 text-[10px] rounded rotate-45 -right-12 top-8 px-10 shadow-[2px_4px_rgba(0,0,0,0.15)] font-bold">
+                    Under development
+                </div>
+            )}
             {/* Image */}
-            <div className=" relative max-h-[200px] w-full ">
+            <div className="relative w-full">
                 {/* Images container*/}
                 <div
                     style={{
@@ -71,7 +79,7 @@ const Card = ({
                             id={`${path}`}
                             key={path}
                             src={path ? path : "/spi 2.jpg"}
-                            className="rounded-t-lg snap-start object-cover
+                            className="rounded-t-lg snap-start object-con
                              min-w-full"
                             // height={100}
                             // width={100}
@@ -149,7 +157,7 @@ const Card = ({
                         <BiPlay className="inline -translate-y-[1px] text-[25px]" />
                         Live Preview
                     </a>
-                    <a href={viewCode}>
+                    <a href={viewCode} target="_blank">
                         <GrGithub className="inline -translate-y-[1px]" /> View
                         Code
                     </a>

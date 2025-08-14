@@ -27,6 +27,7 @@ export const projects = [
         livePreview: "https://quizium.onrender.com/",
         viewCode: "https://github.com/Adamson123/Quizium",
         scrollerColor: "",
+        underDevelopment: false,
     },
     {
         title: "do-manager",
@@ -52,6 +53,47 @@ export const projects = [
         livePreview: "https://do-manager.vercel.app/",
         viewCode: "https://github.com/Adamson123/Do-Manager",
         scrollerColor: "",
+        underDevelopment: false,
+    },
+    {
+        title: "StudyPDF",
+        description: `
+       StudyPDF is a smart study platform that lets students upload PDFs and instantly generate summaries, quizzes, and flashcards using AI. Built with React and Next.js, it features a modern PDF viewer and easy-to-use tools. StudyPDF helped me quickly review key concepts and practice exam questions, saving time and improving my grades.        
+        `,
+        images: [
+            "/study-pdf-features/home.png",
+            "/study-pdf-features/generating.png",
+            "/study-pdf-features/questions.png",
+            "/study-pdf-features/flashcards.png",
+        ],
+        techStack: [
+            "nextjs.png",
+            "typescript.png",
+            "css.png",
+            "tailwindcss.png",
+        ],
+        livePreview: "https://study-pdf-pearl.vercel.app/",
+        viewCode: "https://github.com/Adamson123/StudyPDF",
+        scrollerColor: "",
+        underDevelopment: true,
+    },
+    {
+        title: "Maina and Kids",
+        description: `
+     I volunteered to optimize and enhance the Maina & Kids Children Foundation website, a platform dedicated to supporting and empowering children in Nigeria through education, health, and mentorship programs. I overhauled the design, improved functionality and performance, and revamped layouts for a modern, engaging UI. I added interactive features, restructured components for maintainability, made the site fully responsive, integrated smooth animations, and refined navigation and accessibility for a seamless user experience.        
+        `,
+
+        images: [
+            "/maina-and-kids/hero.png",
+            "/maina-and-kids/about-team.png",
+            "/maina-and-kids/project-safenet.png",
+        ],
+        techStack: ["react.png", "css.png", "tailwindcss.png"],
+        livePreview: "https://maina-and-kids-children-foundation.vercel.app/",
+        viewCode:
+            "https://github.com/Adamson123/Maina-and-Kids-Children-Foundation/tree/master",
+        scrollerColor: "",
+        underDevelopment: false,
     },
     {
         title: "BlockCraft",
@@ -67,6 +109,7 @@ export const projects = [
         livePreview: "https://block-craft.vercel.app/",
         viewCode: "https://github.com/Adamson123/BlockCraft",
         scrollerColor: "",
+        underDevelopment: false,
     },
     {
         title: "XPAD",
@@ -88,6 +131,7 @@ export const projects = [
         livePreview: "https://adamson123.github.io/Notepad-App/",
         viewCode: "https://github.com/Adamson123/Notepad-App",
         scrollerColor: "",
+        underDevelopment: false,
     },
 ];
 

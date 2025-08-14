@@ -12,52 +12,52 @@ import { BsPerson, BsTools } from "react-icons/bs";
 import { CgMail } from "react-icons/cg";
 
 export default function Home() {
-  return (
-    <main
-      style={{
-        scrollBehavior: "smooth",
-      }}
-      className="relative bg-black-100 flex justify-center items-center
+    return (
+        <main
+            style={{
+                scrollBehavior: "smooth",
+            }}
+            className="relative bg-black-100 flex justify-center items-center
      flex-col overflow-hidden mx-auto sm:px-1 px-5"
-    >
-      <div className="max-w-7xl w-full">
-        <ChangeTheme />
-        {/*//TODO */}
-        <FloatingNav
-          navItems={[
-            {
-              name: "Home",
-              link: "#home",
-              icon: <BiHome className="text-[22px]" />,
-            },
-            {
-              name: "About",
-              link: "#about",
-              icon: <BsPerson className="text-[22px]" />,
-            },
-            {
-              name: "Tools",
-              link: "#tools",
-              icon: <BsTools className="text-[16px]" />,
-            },
-            {
-              name: "Projects",
-              link: "#projects",
-              icon: <AiFillFolder className="text-[22px]" />,
-            },
-            {
-              name: "Message",
-              link: "#message",
-              icon: <CgMail className="text-[22px]" />,
-            },
-          ]}
-        />
-        <Hero />
-        <AboutMe />
-        <TechStack />
-        <Projects />
-        <SendMessage />
-      </div>
-    </main>
-  );
+        >
+            <div className="w-full">
+                <ChangeTheme />
+                {/*//TODO */}
+                <FloatingNav
+                    navItems={[
+                        {
+                            name: "Home",
+                            link: "#home",
+                            icon: <BiHome className="text-[22px]" />,
+                        },
+                        {
+                            name: "About",
+                            link: "#about",
+                            icon: <BsPerson className="text-[22px]" />,
+                        },
+                        {
+                            name: "Tools",
+                            link: "#tools",
+                            icon: <BsTools className="text-[16px]" />,
+                        },
+                        {
+                            name: "Projects",
+                            link: "#projects",
+                            icon: <AiFillFolder className="text-[22px]" />,
+                        },
+                        {
+                            name: "Message",
+                            link: "#message",
+                            icon: <CgMail className="text-[22px]" />,
+                        },
+                    ]}
+                />
+                <Hero />
+                <AboutMe />
+                <TechStack />
+                <Projects />
+                <SendMessage />
+            </div>
+        </main>
+    );
 }
