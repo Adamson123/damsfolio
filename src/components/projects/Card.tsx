@@ -36,7 +36,7 @@ const Card = ({
 
     return (
         <div
-            className="max-h-[630px] w-[450px] min-h-[630px] z-20 rounded-lg
+            className="max-h-[630px]  w-full max-w-[450px] min-h-[630px] z-20 rounded-lg
      bg-transparent shadow-lg grid grid-rows-[45%_55%] relative overflow-hidden"
         >
             {/* inset_0_2px_4px_rgba(0,0,0,0.3),inset_0_-2px_4px_rgba(0,0,0,0.3), */}
