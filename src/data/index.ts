@@ -89,7 +89,7 @@ export const projects = [
             "/maina-and-kids/project-safenet.png",
         ],
         techStack: ["react.png", "css.png", "tailwindcss.png"],
-        livePreview: "https://maina-and-kids-children-foundation.vercel.app/",
+        livePreview: "http://www.mainaandkids.org",
         viewCode:
             "https://github.com/Adamson123/Maina-and-Kids-Children-Foundation/tree/master",
         scrollerColor: "",
